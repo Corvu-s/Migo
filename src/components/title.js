@@ -1,10 +1,9 @@
 import React from "react";
 function Title() {
   return (
-    <div>
-      <h1>Migo</h1>
+    <div style={{ widht: 1, height: 70, background: "#BACAC2" }}>
       <p>Choose what type of application yoiu want to make!</p>
-      <p>if you want to do another run, click about then home!</p>
+      <p>If you want to do another run, click about then home!</p>
     </div>
   );
 }
