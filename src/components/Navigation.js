@@ -1,18 +1,7 @@
 import React from "react";
+import image from "./images.png";
 import { NavLink } from "react-router-dom";
-import {
-  Button,
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
-} from "reactstrap";
+import { Row, Collapse, Navbar, NavbarBrand, Nav, NavItem } from "reactstrap";
 class Navigate extends React.Component {
   state = {
     isOpen: true
@@ -20,20 +9,23 @@ class Navigate extends React.Component {
 
   render() {
     return (
-      <div>
-        <Navbar colour="light" light expand="md">
-          <NavbarBrand href="/">Migo</NavbarBrand>
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav navbar>
-              <NavItem>
-                <NavLink to="/">Home</NavLink>{" "}
-              </NavItem>
-              <NavItem>
-                <NavLink to="/about">About</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
+      <div style={{ widht: 1, height: 128, background: "#BACAC2" }}>
+        <Row>
+          <Navbar colour="light" light expand="md">
+            <NavbarBrand href="/">Migo</NavbarBrand>
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav navbar>
+                <NavItem>
+                  <NavLink to="/">Home</NavLink>{" "}
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/about">About</NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </Navbar>
+          <img src={image} alt="new" />
+        </Row>
       </div>
     );
   }

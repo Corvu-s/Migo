@@ -39,7 +39,7 @@ class App extends Component {
   };
   render() {
     return (
-      <div style={{ background: "#B9BDBB" }}>
+      <div>
         <Title />
         <Forms getData={this.getData} />
         <Display
