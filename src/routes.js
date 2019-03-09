@@ -1,22 +1,22 @@
 import React from "react";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 import App from "./App";
-import Nav from "./components/Navigation";
 import About from "./components/About";
-class routing extends React.Component {
+import Nav from "./components/Navigation";
+class Routing extends React.Component {
   render() {
     return (
       <BrowserRouter>
         <div>
           <Nav />
-          <switch>
+          <Switch>
             <Route path="/" component={App} exact />
             <Route path="/about" component={About} />
-          </switch>
+          </Switch>
         </div>
       </BrowserRouter>
     );
   }
 }
 
-export default routing;
+export default Routing;
