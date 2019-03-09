@@ -1,7 +1,9 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
-const Form = props => (
-  <form onSubmit={props.getData}>
+const Forms = props => (
+  <form
+    style={{ width: 1000, height: 200, background: "#B9BDBB" }}
+    onSubmit={props.getData}
+  >
     <label>
       Websites:
       <input type="radio" name="top" value="website" />
@@ -18,8 +20,9 @@ const Form = props => (
       || Communication
       <input type="radio" name="underWeb" value="communication" />
       //
-      <p> __________________________________________________________________</p>
+      <p>__________________________________________________________________</p>
     </label>
+
     <label>
       Mobile Apps:
       <input type="radio" name="top" value="mobile" />
@@ -35,8 +38,8 @@ const Form = props => (
       <input type="radio" name="underApp" value="appcommunication" />
     </label>
     <p />
-    <Button>Submit</Button>
+    <button>Submit</button>
   </form>
 );
 
-export default Form;
+export default Forms;

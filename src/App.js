@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Form from "./components/Form";
+import Forms from "./components/Form";
 import Title from "./components/title";
 import Display from "./components/Display";
 class App extends Component {
@@ -39,9 +39,9 @@ class App extends Component {
   };
   render() {
     return (
-      <div>
+      <div style={{ background: "#B9BDBB" }}>
         <Title />
-        <Form getData={this.getData} />
+        <Forms getData={this.getData} />
         <Display
           app={this.state.app}
           website={this.state.website}
