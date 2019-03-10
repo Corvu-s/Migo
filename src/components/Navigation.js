@@ -1,5 +1,5 @@
 import React from "react";
-import image from "./images.png";
+import image from "./Header.png";
 import { NavLink } from "react-router-dom";
 import { Row, Collapse, Navbar, NavbarBrand, Nav, NavItem } from "reactstrap";
 class Navigate extends React.Component {
@@ -9,8 +9,9 @@ class Navigate extends React.Component {
 
   render() {
     return (
-      <div style={{ widht: 1, height: 128, background: "#BACAC2" }}>
+      <div style={{ widht: 100, height: 128, background: "#BACAC2" }}>
         <Row>
+          <img src={image} alt="new" />
           <Navbar colour="light" light expand="md">
             <NavbarBrand href="/">Migo</NavbarBrand>
             <Collapse isOpen={this.state.isOpen} navbar>
@@ -24,11 +25,10 @@ class Navigate extends React.Component {
               </Nav>
             </Collapse>
           </Navbar>
-          <img src={image} alt="new" />
         </Row>
       </div>
     );
   }
 }
 
-export default Navigate; //changejghghg
+export default Navigate;
