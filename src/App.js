@@ -6,8 +6,7 @@ import Test from "./components/test";
 class App extends Component {
   state = {
     button: " ",
-    indicator1: false,
-    indicator2: false
+    section: " "
   };
 
   getData = event => {
@@ -17,14 +16,12 @@ class App extends Component {
     if (top === "website") {
       this.setState({
         button: event.target.elements.first.value,
-        indicator1: true,
-        inducator2: false
+        section: top
       });
     } else if (top === "app") {
       this.setState({
         button: event.target.elements.second.value,
-        inducator1: false,
-        indicator2: true
+        section: top
       });
     }
   };
@@ -35,8 +32,9 @@ class App extends Component {
         <Forms getData={this.getData} />
         <Test
           tag={this.state.button}
-          indicator1={this.state.indicator}
-          inducator2={this.state.inducator2}
+          pass={this.state.section}
+          indicator1={this.state.indicator1}
+          indicator2={this.state.inducator2}
         />
       </div>
     );

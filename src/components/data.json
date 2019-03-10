@@ -1,3 +1,29 @@
+<<<<<<< HEAD
 {
   "ecommerce": ["React", "Angular", "Vue"]
 }
+=======
+[
+  {
+    "type": "portfolio",
+    "js": ["Gatsby","React","Angular","Vue"],
+    "css": ["Foundation 5","Bootstrap","Bulma"]
+
+  },
+  {
+    "type": "e-commerce",
+    "js": ["Gatsby","React","Angular","Vue"],
+    "css": ["Foundation 5","Bootstrap","Bulma"]
+  },
+  {
+    "type": "social media",
+    "js": ["Gatsby","React","Angular","Vue"],
+    "css": ["Foundation 5","Bootstrap","Bulma"]
+  },
+  {
+    "type": "blog",
+    "js": ["Gatsby","React","Angular","Vue"],
+    "css": ["Foundation 5","Bootstrap","Bulma"]
+  }
+]
+>>>>>>> 05a9bb04a2deb7ae3d130af2e6a7b764ecdc4351
