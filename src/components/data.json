@@ -1,15 +1,23 @@
 [
   {
     "type": "portfolio",
-    "js_framework": ["React","Angular","Vue"]
+    "js": ["Gatsby","React","Angular","Vue"],
+    "css": ["Foundation 5","Bootstrap","Bulma"]
+
   },
   {
-    "type": "e-commerce"
+    "type": "e-commerce",
+    "js": ["Gatsby","React","Angular","Vue"],
+    "css": ["Foundation 5","Bootstrap","Bulma"]
   },
   {
-    "type": "social media"
+    "type": "social media",
+    "js": ["Gatsby","React","Angular","Vue"],
+    "css": ["Foundation 5","Bootstrap","Bulma"]
   },
   {
-    "type": "blog"
+    "type": "blog",
+    "js": ["Gatsby","React","Angular","Vue"],
+    "css": ["Foundation 5","Bootstrap","Bulma"]
   }
 ]
