@@ -1,7 +1,14 @@
 import React from "react";
-import { Button, Form, FormGroup, Label } from "reactstrap";
+import { Button, Form, FormGroup, Label, Spinner } from "reactstrap";
 const Forms = props => (
-  <Form onSubmit={props.getData}>
+  <Form
+    onSubmit={props.getData}
+    style={{
+      widht: 1,
+      height: 125,
+      backgroundColor: "#8F9492"
+    }}
+  >
     <Label>
       <FormGroup check>
         <Label check>
@@ -19,7 +26,7 @@ const Forms = props => (
           </select>
         </Label>
       </FormGroup>
-      /////
+
       <FormGroup check>
         <Label check>
           Apps:
@@ -32,7 +39,7 @@ const Forms = props => (
             <option value="game">Game</option>
             <option value="hardware">Hardware Interaction</option>
             <option value="appData">Data driven apps</option>
-            <option value="comms">Communication</option>
+            <option value="comms">App Development</option>
           </select>
         </Label>
       </FormGroup>

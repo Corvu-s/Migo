@@ -9,7 +9,7 @@ class Navigate extends React.Component {
 
   render() {
     return (
-      <div style={{ widht: 100, height: 128, background: "#BACAC2" }}>
+      <div style={{ widht: 100, height: 128, backgroundColor: "#B0B1B1" }}>
         <Row>
           <img src={image} alt="new" />
           <Navbar colour="light" light expand="md">

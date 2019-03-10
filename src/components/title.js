@@ -1,12 +1,9 @@
 import React from "react";
 function Title() {
   return (
-    <div style={{ widht: 1, height: 70, background: "#BACAC2" }}>
+    <div style={{ widht: 1, height: 50, backgroundColor: "#9A9E9C" }}>
       <p className="title-container__subtitle">
         Choose what type of application yoiu want to make!
-      </p>
-      <p className="title-container__subtitle">
-        If you want to do another run, click about then home!
       </p>
     </div>
   );
