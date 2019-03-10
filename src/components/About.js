@@ -8,7 +8,7 @@ function About() {
         Our vision is to help would be and aspiring hackers with the tools they
         need to take their project to the next step!
       </p>
-      <p>This project was made by : </p>
+      <p>This project was made using React.js </p>
     </div>
   );
 }
