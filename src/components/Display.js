@@ -4,15 +4,9 @@ function Display(props) {
   if (props.website) {
     return (
       <div>
-        <p>{props.temp3}</p>
-        <p>{props.temp1}</p>
-      </div>
-    );
-  } else if (props.app) {
-    return (
-      <div>
-        <p>{props.temp4}</p>
         <p>{props.temp2}</p>
+        <p>{props.temp1}</p>
+        <p>{props.temp3}</p>
       </div>
     );
   } else {
