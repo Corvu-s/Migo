@@ -1,35 +1,15 @@
 [
   {
-    "website": [
-      {
-        "type": "portfolio",
-        "js_framework": ["React","Angular","Vue"]
-      },
-      {
-        "type": "e-commerce"
-      },
-      {
-        "type": "social media"
-      },
-      {
-        "type": "blog"
-      }
-    ]
+    "type": "portfolio",
+    "js_framework": ["React","Angular","Vue"]
   },
   {
-    "mobile_app": [
-      {
-        "type": "game"
-      },
-      {
-        "type": "hardware_interaction"
-      },
-      {
-        "type": "data_driven"
-      },
-      {
-        "type": "communication"
-      }
-    ]
+    "type": "e-commerce"
+  },
+  {
+    "type": "social media"
+  },
+  {
+    "type": "blog"
   }
 ]
