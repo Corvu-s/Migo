@@ -4,36 +4,32 @@ import Title from "./components/title";
 import Display from "./components/Display";
 class App extends Component {
   state = {
+    temp3: undefined,
+    temp4: undefined,
+    temp1: undefined,
+    temp2: undefined,
     website: false,
-    app: false,
-    hasSubmitted: false,
-    topLevel: undefined,
-    bottomLevel: undefined
+    app: false
   };
   getData = async event => {
     event.preventDefault();
     const top = event.target.elements.top.value;
     if (top === "website") {
-      const bottom = event.target.elements.underWeb.value;
-    } else {
-      const bottom = event.target.elements.underApp.value;
-    }
-    const api_call = await fetch(`     `);
-    const data = await api_call.json();
-    console.log(data);
-    if (top === "website") {
+      const Webbottom = event.target.elements.first.value;
       this.setState({
+        temp3: "website",
         website: true,
         app: false,
-        topLevel: data,
-        bottomLevel: data
+        temp1: Webbottom
       });
     } else if (top === "mobile") {
+      const Appbottom = event.target.elements.second.value;
+
       this.setState({
+        temp4: "app",
         app: true,
         website: false,
-        topLevel: data,
-        bottomLevel: data
+        temp2: Appbottom
       });
     }
   };
@@ -45,8 +41,10 @@ class App extends Component {
         <Display
           app={this.state.app}
           website={this.state.website}
-          top={this.state.topLevel}
-          bottom={this.state.bottomLevel}
+          temp1={this.state.temp1}
+          temp2={this.setState.temp2}
+          temp3={this.state.temp3}
+          temp4={this.state.temp4}
         />
       </div>
     );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
+import { Button, Form, FormGroup, Label } from "reactstrap";
 const Forms = props => (
   <Form onSubmit={props.getData}>
     <Label>
@@ -11,21 +11,16 @@ const Forms = props => (
       </FormGroup>
       <FormGroup check>
         <Label check>
-          Ecommerce
-          <input type="radio" name="underWeb" value="ecommerce" />
-          || Social Media
-          <input type="radio" name="underWeb" value="social " />
-          || Blogs
-          <input type="radio" name="underWeb" value="blogs" />
-          || Portfolio
-          <input type="radio" name="underWeb" value="portfolio" />
-          || Data driven apps
-          <input type="radio" name="underWeb" value="data " />
-          || Communication
-          <input type="radio" name="underWeb" value="communication" />
+          <select id="first">
+            <option value="ecommerce">Ecommerce</option>
+            <option value="social">SOcail Media</option>
+            <option value="blogs">Blogs</option>
+            <option value="portfolio">Portfolio</option>
+            <option value="data">Data driven apps</option>
+            <option value="communication">Communication</option>
+          </select>
         </Label>
       </FormGroup>
-
       <p>
         ____________________________________________________________________________________
       </p>
@@ -37,17 +32,15 @@ const Forms = props => (
       </Label>
     </FormGroup>
     <FormGroup check>
-      <Label>
-        Games
-        <input type="radio" name="underApp" value="games" />
-        || Social Media
-        <input type="radio" name="underApp" value="appsocial" />
-        || Hrdware Interaction
-        <input type="radio" name="underApp" value="apphardware" />
-        || Data
-        <input type="radio" name="underApp" value="appdata" />
-        || Communication
-        <input type="radio" name="underApp" value="appcommunication" />
+      <Label check>
+        <select id="second">
+          <option value="games">Games</option>
+          <option value="Appsocial">Socail Media</option>
+          <option value="Hardware">Hardware Interactions</option>
+          <option value="Appdata">Data</option>
+
+          <option value="Appcommunication">Communication</option>
+        </select>
       </Label>
     </FormGroup>
     <Button color="primary">Submit</Button>
