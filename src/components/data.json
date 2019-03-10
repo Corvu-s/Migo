@@ -1,15 +1,3 @@
-[
-  {
-    "type": "portfolio",
-    "js_framework": ["React","Angular","Vue"]
-  },
-  {
-    "type": "e-commerce"
-  },
-  {
-    "type": "social media"
-  },
-  {
-    "type": "blog"
-  }
-]
+{
+  "ecommerce": ["React", "Angular", "Vue"]
+}

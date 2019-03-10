@@ -12,10 +12,27 @@ const Forms = props => (
       <FormGroup check>
         <Label check>
           <select id="first">
-            <option value="1">Ecommerce</option>
-            <option value="2">SOcail Media</option>
-            <option value="3">Blogs</option>
-            <option value="0">Portfolio</option>
+            <option value="ecommerce">Ecommerce</option>
+            <option value="webMedia">Socail Media</option>
+            <option value="blogs">Blogs</option>
+            <option value="portfolio">Portfolio</option>
+          </select>
+        </Label>
+      </FormGroup>
+      /////
+      <FormGroup check>
+        <Label check>
+          Apps:
+          <input type="radio" name="top" value="app" />
+        </Label>
+      </FormGroup>
+      <FormGroup check>
+        <Label check>
+          <select id="second">
+            <option value="game">Game</option>
+            <option value="hardware">Hardware Interaction</option>
+            <option value="appData">Data driven apps</option>
+            <option value="comms">Communication</option>
           </select>
         </Label>
       </FormGroup>

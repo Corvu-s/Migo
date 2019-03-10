@@ -1,27 +1,31 @@
 import React, { Component } from "react";
 import Forms from "./components/Form";
 import Title from "./components/title";
-import Display from "./components/Display";
-import Data from "./components/data.json";
+import Test from "./components/test";
+
 class App extends Component {
   state = {
-    temp3: undefined,
-    temp1: undefined,
-    temp2: undefined,
-    website: false
+    button: " ",
+    indicator1: false,
+    indicator2: false
   };
+
   getData = event => {
     event.preventDefault();
     const top = event.target.elements.top.value;
+
     if (top === "website") {
-      const bottom = event.target.elements.first.value;
       this.setState({
-        website: true,
-        temp1: bottom,
-        temp2: "website",
-        temp3: Data.bottom
+        button: event.target.elements.first.value,
+        indicator1: true,
+        inducator2: false
       });
-      console.log(Data);
+    } else if (top === "app") {
+      this.setState({
+        button: event.target.elements.second.value,
+        inducator1: false,
+        indicator2: true
+      });
     }
   };
   render() {
@@ -29,11 +33,10 @@ class App extends Component {
       <div>
         <Title />
         <Forms getData={this.getData} />
-        <Display
-          website={this.state.website}
-          temp1={this.state.temp1}
-          temp2={this.state.temp2}
-          temp3={this.state.temp3}
+        <Test
+          tag={this.state.button}
+          indicator1={this.state.indicator}
+          inducator2={this.state.inducator2}
         />
       </div>
     );
